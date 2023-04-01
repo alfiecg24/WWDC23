@@ -15,7 +15,7 @@
         },
         {
             "heading": "What do I do if someone tries to phish me?",
-            "content": "Most importantly, do not respond to any communication, click on any links or download/open any files. Instead, contact the organisation they claim to be yourself to check if they have sent you anything. Additionally, when entering sensitive information online, make sure that the URL looks legitimate and that the website is secure. You can check this by looking for a padlock symbol in the address bar or by checking that the URL starts with 'https://'."
+            "content": "Most importantly, do not respond to any communication, click on any links or download/open any files. Instead, contact the organisation they claim to be yourself to check if they have tried to contact you. Additionally, when entering sensitive information online, make sure that the URL looks legitimate and that the website is secure. You can check this by looking for a padlock symbol in the address bar or by checking that the URL starts with 'https://'."
         }
     ]
 },
@@ -28,11 +28,11 @@
         },
             {
                 "heading": "What kind of network attacks are there?",
-                "content": "The most common forms of these attacks are Man-in-the-Middle attacks and Denial-of-Service attacks. A man-in-the-middle attack is where an attack places themselves inbetween your device and the network route, allowing them to intercept all your network traffic which could include sensitive data. A denial-of-service attack is where an attacker floods a network or device with data, which can cause it to become overloaded and unusable."
+                "content": "The most common forms of these attacks are Man-in-the-Middle attacks and Denial-of-Service attacks. A man-in-the-middle attack is where an attacker places themselves inbetween your device and the network route, allowing them to intercept all your network traffic which could include sensitive data. A denial-of-service attack is where an attacker floods a network or device with data, which can cause it to become overloaded and unusable."
             },
             {
                 "heading": "How can I protect myself against network attacks?",
-                "content": "The best way to protect yourself against network attacks is to make sure that you're using a secure network. Most password-protected networks will use encryption by default, so it is safe to connect to these. However, if you use an open WiFi network that doesn't require a password, it is highly likely that all your traffic is being sent across the network unencrypted. This means that anyone on the network can intercept your data and read it. To protect against this, you may want to try using a Virtual Private Network (VPN), which will encrypt your traffic for you and prevent an attack from understanding what you're sending. It is also a good idea to not use open networks at all, if you can avoid it - as they are generally thought of as unsafe."
+                "content": "The best way to protect yourself against network attacks is to make sure that you're using a secure network. Most password-protected networks will use encryption by default, so it is safe to connect to these. However, if you use an open WiFi network that doesn't require a password, it is highly likely that all your traffic is being sent across the network unencrypted. This means that anyone on the network can intercept your data and read it. To protect against this, you may want to try using a Virtual Private Network (VPN), which will encrypt your traffic for you and prevent an attacker from understanding what you're transmitting. It is also a good idea to not use open networks at all, if you can avoid it - as they are generally thought of as unsafe."
             }
         ]
     },
