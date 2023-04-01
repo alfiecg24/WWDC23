@@ -6,6 +6,10 @@ struct PasswordGeneratorView: View {
     @State private var shouldUseDifferentCases = true
     @State private var shouldUseSpecialCharacters = true
     
+    // Used to show password strength
+    @State private var passwordStrengthString = ""
+    @State private var passwordStrengthColor: Color = .white
+    
     @State var password = ""
     var body: some View {
         GeometryReader { geometry in
@@ -20,10 +24,12 @@ struct PasswordGeneratorView: View {
                 .padding(.bottom)
                 .onAppear {
                     generatePassword()
+                    passwordStrengthIndication()
                 }
                 HStack {
                     Slider(value: $length, in: 8.0...25.0, onEditingChanged: { _ in
                         generatePassword()
+                        passwordStrengthIndication()
                     })
                     .frame(width: geometry.size.width / 3)
                     Divider()
@@ -77,6 +83,7 @@ struct PasswordGeneratorView: View {
                     Divider()
                         .frame(height: 35)
                     Button(action: {
+                        // Copy password to clipboard
                         let pasteboard = UIPasteboard.general
                         pasteboard.string = password
                     }, label: {
@@ -87,49 +94,41 @@ struct PasswordGeneratorView: View {
                 }
                 .padding()
                 
-                if password != "" && password != " " {
-                    switch Password(password: password).passwordStrength {
-                    case .veryWeak:
-                        Divider()
-                            .frame(width: geometry.size.width / 3)
-                            .padding(.bottom)
-                        Text("This password is very weak")
-                            .foregroundColor(.red)
-                            .font(Font(UIFont(name: "WorkSans-SemiBold", size: 25.0)!))
-                    case .weak:
-                        Divider()
-                            .frame(width: geometry.size.width / 3)
-                            .padding(.bottom)
-                        Text("This password is weak")
-                            .foregroundColor(.orange)
-                            .font(Font(UIFont(name: "WorkSans-SemiBold", size: 25.0)!))
-                    case .moderate:
-                        Divider()
-                            .frame(width: geometry.size.width / 3)
-                            .padding(.bottom)
-                        Text("This password is moderate")
-                            .foregroundColor(.yellow)
-                            .font(Font(UIFont(name: "WorkSans-SemiBold", size: 25.0)!))
-                    case .strong:
-                        Divider()
-                            .frame(width: geometry.size.width / 3)
-                            .padding(.bottom)
-                        Text("This password is strong")
-                            .foregroundColor(.green)
-                            .font(Font(UIFont(name: "WorkSans-SemiBold", size: 25.0)!))
-                    case .veryStrong:
-                        Divider()
-                            .frame(width: geometry.size.width / 3)
-                            .padding(.bottom)
-                        Text("This password is very strong")
-                            .foregroundColor(.cyan)
-                            .font(Font(UIFont(name: "WorkSans-SemiBold", size: 25.0)!))
-                    default:
-                        EmptyView()
-                    }
-                }
+                // Dynamic password strength indicator
+                Divider()
+                    .frame(width: geometry.size.width / 3)
+                    .padding(.bottom)
+                Text("This password is \(passwordStrengthString)")
+                    .foregroundColor(passwordStrengthColor)
+                    .font(Font(UIFont(name: "WorkSans-SemiBold", size: 25.0)!))
+                
             }
             .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
+        }
+    }
+    
+    // Configure password strength string and colour for password
+    func passwordStrengthIndication() {
+        print("🏋️‍♂️ Computing strength of \(password)")
+        switch Password(password: password).passwordStrength {
+        case .veryWeak:
+            passwordStrengthString = "very weak"
+            passwordStrengthColor = .red
+        case .weak:
+            passwordStrengthString = "weak"
+            passwordStrengthColor = .orange
+        case .moderate:
+            passwordStrengthString = "moderate"
+            passwordStrengthColor = .yellow
+        case .strong:
+            passwordStrengthString = "strong"
+            passwordStrengthColor = .green
+        case .veryStrong:
+            passwordStrengthString = "very strong"
+            passwordStrengthColor = .cyan
+        default:
+            passwordStrengthString = ""
+            passwordStrengthColor = .white
         }
     }
     
@@ -148,7 +147,6 @@ struct PasswordGeneratorView: View {
             password += "\(element)"
         }
     }
-    
 }
 
 struct PasswordGeneratorView_Previews: PreviewProvider {

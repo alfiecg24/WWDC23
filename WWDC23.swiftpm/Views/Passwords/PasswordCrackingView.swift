@@ -3,6 +3,10 @@ import SwiftUI
 struct PasswordCrackingView: View {
     @State private var password = ""
     @State private var result = ""
+    
+    @State private var passwordStrengthString = ""
+    @State private var passwordStrengthColor: Color = .white
+    
     var body: some View {
         GeometryReader { geometry in
             VStack(alignment: .center) {
@@ -28,36 +32,14 @@ struct PasswordCrackingView: View {
                                     result = "⏰ Your password would take \(bruteForceTime.passwordCrackingTimeString()) to brute force!"
                                 })
                             }
+                            passwordStrengthIndication()
                         }
                     })
                 if password != "" && password != " " {
-                    switch Password(password: password).passwordStrength {
-                    case .veryWeak:
-                        Text("This password is very weak")
-                            .foregroundColor(.red)
-                            .font(Font(UIFont(name: "WorkSans-SemiBold", size: 25.0)!))
-                    case .weak:
-                        Text("This password is weak")
-                            .foregroundColor(.orange)
-                            .font(Font(UIFont(name: "WorkSans-SemiBold", size: 25.0)!))
-                    case .moderate:
-                        Text("This password is moderate")
-                            .foregroundColor(.yellow)
-                            .font(Font(UIFont(name: "WorkSans-SemiBold", size: 25.0)!))
-                    case .strong:
-                        Text("This password is strong")
-                            .foregroundColor(.green)
-                            .font(Font(UIFont(name: "WorkSans-SemiBold", size: 25.0)!))
-                    case .veryStrong:
-                        Text("This password is very strong")
-                            .foregroundColor(.cyan)
-                            .font(Font(UIFont(name: "WorkSans-SemiBold", size: 25.0)!))
-                    default:
-                        EmptyView()
-                    }
-                    Divider()
-                        .frame(width: (geometry.size.width / 3) * 2)
-                        .padding()
+                    // Dynamic password strength indicator
+                    Text("This password is \(passwordStrengthString)")
+                        .foregroundColor(passwordStrengthColor)
+                        .font(Font(UIFont(name: "WorkSans-SemiBold", size: 25.0)!))
                 } else {
                     Text("Enter your password to begin!")
                         .foregroundColor(.white)
@@ -73,6 +55,32 @@ struct PasswordCrackingView: View {
             .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
         }
     }
+    
+    // Configure password strength string and colour for password
+    func passwordStrengthIndication() {
+        print("🏋️‍♂️ Computing strength of \(password)")
+        switch Password(password: password).passwordStrength {
+        case .veryWeak:
+            passwordStrengthString = "very weak"
+            passwordStrengthColor = .red
+        case .weak:
+            passwordStrengthString = "weak"
+            passwordStrengthColor = .orange
+        case .moderate:
+            passwordStrengthString = "moderate"
+            passwordStrengthColor = .yellow
+        case .strong:
+            passwordStrengthString = "strong"
+            passwordStrengthColor = .green
+        case .veryStrong:
+            passwordStrengthString = "very strong"
+            passwordStrengthColor = .cyan
+        default:
+            passwordStrengthString = ""
+            passwordStrengthColor = .white
+        }
+    }
+    
 }
 
 struct PasswordCrackingView_Previews: PreviewProvider {

@@ -13,22 +13,11 @@ struct TitleScreenView: View {
         GeometryReader { geometry in
             ZStack {
                 GradientBackground()
-                // Rotating squares at the corners
-//                ForEach(colours, id: \.self) { colour in
-//                    Rectangle()
-//                        .fill(colour)
-//                        .frame(width: 100, height: 100)
-//                        .offset(x: geometry.size.width / 2 - 50, y: geometry.size.height / 2 - 50)
-//                        .rotationEffect(.degrees(Double(colours.firstIndex(of: colour)! * 60)))
-//                        .animation(Animation.easeInOut(duration: 2.0).repeatForever(autoreverses: true), value: UUID())
-//                }
-                
                 VStack {
                     Text(text)
                         .foregroundColor(.white)
                         .font(Font(UIFont(name: "WorkSans-Bold", size: 60.0)!))
                         .padding(.bottom)
-                    
                     ContinueButton()
                         .padding()
                 }

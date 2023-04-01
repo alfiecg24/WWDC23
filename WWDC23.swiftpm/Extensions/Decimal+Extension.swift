@@ -11,11 +11,17 @@ extension Decimal {
     
     // Used to output brute-force time to user
     var clean: String {
+        // Remove everything after and including decimal place
         let cleaned = "\(self)".components(separatedBy: ".")[0]
+        // Used to format years with comments
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
-        let num = numberFormatter.number(from: cleaned) ?? 0
-        return numberFormatter.string(from: num) ?? cleaned
+        // Handle not being able to create number from cleaned string
+        if let num = numberFormatter.number(from: cleaned) {
+            return numberFormatter.string(from: num) ?? cleaned
+        } else {
+            return cleaned
+        }
     }
     
     // Convert x seconds to years, months, days, hours, minutes, seconds
