@@ -2,7 +2,7 @@ import SwiftUI
 
 struct SplashScreens: View {
     // Different messages to show on splash screens
-    let messages = ["In the first half of 2022, there were an estimated 2.8 billion malware attacks.", "Luckily, only around 6.2% of computer malware is on macOS systems. For mobile malware, iOS accounts for less than 0.1% of infections.", "However, it is always important to make sure you are protected against these threats to prevent you being targeted by them."]
+    let messages = ["In the first half of 2022, there were an estimated 2.8 billion malware attacks.", "Luckily, only around 6.2% of computer malware was found to target macOS systems. For mobile malware, iOS accounts for less than 0.1% of infections.", "However, it is always important to make sure you are protected against these threats to prevent you being targeted by them."]
     
     // Which message to show
     @State private var index = 0

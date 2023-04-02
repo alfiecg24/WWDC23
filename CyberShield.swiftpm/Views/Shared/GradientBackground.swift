@@ -2,7 +2,7 @@ import SwiftUI
 
 struct GradientBackground: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
-    let lightColours: [Color] = [.blue, .green]
+    let lightColours: [Color] = [.green, .blue]
     let darkColours: [Color] = [Color(red: 0, green: 51/255, blue: 102/255), Color(red: 0, green: 0, blue: 102/255)]
     var body: some View {
         // Background gradient

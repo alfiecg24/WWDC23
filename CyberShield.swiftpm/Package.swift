@@ -8,17 +8,17 @@ import PackageDescription
 import AppleProductTypes
 
 let package = Package(
-    name: "WWDC23",
+    name: "CyberShield",
     platforms: [
         .iOS("16.0")
     ],
     products: [
         .iOSApplication(
-            name: "WWDC23",
+            name: "CyberShield",
             targets: ["AppModule"],
             displayVersion: "1.0",
             bundleVersion: "1",
-            appIcon: .placeholder(icon: .magicWand),
+            appIcon: .asset("AppIcon"),
             accentColor: .presetColor(.blue),
             supportedDeviceFamilies: [
                 .pad,

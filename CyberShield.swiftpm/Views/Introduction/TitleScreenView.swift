@@ -3,7 +3,7 @@ import SwiftUI
 
 struct TitleScreenView: View {
     let colours: [Color] = [.red, .orange, .yellow, .green, .blue, .purple]
-    let text = "Welcome to CyberShield!"
+    let text = "Welcome to CyberShield"
     
     @State private var animate = false
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
