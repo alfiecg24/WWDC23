@@ -20,11 +20,4 @@ For those who are interested, the algorithm for the password generator is as fol
 * You are now left with the number of seconds required to crack the password with a brute-force attack
 
 ## Screenshots
-
-<!-- Make sure the text doesn't split up -->
-<!-- <img src="/repo/images/Title.jpg" width="400" height="300"> <img src="/repo/images/Passwords.jpg" width="400" height="300"> <img src="/repo/images/Info.jpg" width="400" height="300">
- -->
-<div>
-    <p>The screenshots below show the main screens of the app - in both light and dark mode. The password generator and calculator are also shown in action.</p>
-    <img src="/repo/images/Title.jpg" width="400" height="300"> <img src="/repo/images/Passwords.jpg" width="400" height="300"> <img src="/repo/images/Info.jpg" width="400" height="300">
-</div>
+Check out images in the folder `images` for screenshots of the app in action - using both light and dark mode with its clean user interface.
