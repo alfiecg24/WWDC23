@@ -3,19 +3,19 @@
     "image": "fish",
     "content": [{
         "heading": "What is phishing?",
-        "content": "Phishing, also known as social engineering, is a common type of cyber-attack. It is where a scammer uses fake emails, text messages or other communication methods in order to trick you into revealing personal information - such as usernames and passwords or credit card info."
+        "content": "Phishing, also known as social engineering, is a common type of cyber-attack. It is where a scammer uses **fake** emails, text messages or other communication methods in order to **trick you** into revealing personal information - such as usernames and passwords or credit card info."
     },
         {
             "heading": "What are the signs of phishing?",
-            "content": "Phishing attacks are designed to look as legitimate as possible, in order to have the highest chance of someone falling victim to them. This means that they often seem to be from reputable sources - such as banks, online shopping sites or even government agencies. They may also use convincing graphics, logos and images to make themselves look more genuine. On websites, they may show a fake keyboard to trick you into entering sensitive information. Luckily, iOS has a built-in feature that will try to spot this happening and warn you that the website may be presenting a fake keyboard."
+            "content": "Phishing attacks are designed to look **as legitimate as possible**, in order to have the highest chance of someone falling victim to them. This means that they often seem to be from reputable sources - such as banks, online shopping sites or even government agencies. They may also use convincing graphics, logos and images to make themselves look more genuine. On websites, they may show a fake keyboard to trick you into entering sensitive information. Luckily, iOS has a built-in feature that will try to spot this happening and warn you that the website may be presenting a fake keyboard."
         },
         {
             "heading": "How can I protect myself from phishing?",
-            "content": "To protect yourself against phishing, it is important to be aware of some of the tell-tale signs of it. Frequent indicators of phishing include: a generic greeting (e.g. 'Dear customer' or 'Dear account holder'), an urgent or threatening tone (which aims to create panic and encourage you to act quickly), spelling and grammar mistakes or subtle mistakes that show inconsistencies."
+            "content": "To protect yourself against phishing, it is important to be aware of some of the tell-tale signs of it. Frequent indicators of phishing include: a **generic greeting** (e.g. 'Dear customer' or 'Dear account holder'), an **urgent or threatening tone** (which aims to create panic and encourage you to act quickly), **spelling and grammar mistakes** or subtle mistakes that show inconsistencies."
         },
         {
             "heading": "What do I do if someone tries to phish me?",
-            "content": "Most importantly, do not respond to any communication, click on any links or download/open any files. Instead, contact the organisation they claim to be yourself to check if they have tried to contact you. Additionally, when entering sensitive information online, make sure that the URL looks legitimate and that the website is secure. You can check this by looking for a padlock symbol in the address bar or by checking that the URL starts with 'https://'."
+            "content": "Most importantly, **do not** respond to any communication, click on any links or download/open any files. Instead, contact the organisation they claim to be yourself to check if they have tried to contact you. Additionally, when entering sensitive information online, make sure that the URL looks legitimate and that the website is secure. You can check this by looking for a **padlock symbol** in the address bar or by checking that the URL starts with 'https://'."
         }
     ]
 },
@@ -24,7 +24,7 @@
         "image": "wifi",
         "content": [{
             "heading": "How can networks be dangerous?",
-            "content": "When you're connected to a network, you're also interconnected with every other device on that network. Some attackers may choose network attacks as a way to gain access to a large number of devices at once or to gain access in a much less detectable way that you may not notice."
+            "content": "When you're connected to a network, you're also interconnected with **every other device on that network**. Some attackers may choose network attacks as a way to gain access to a large number of devices at once or to gain access in a much less detectable way that you may not notice."
         },
             {
                 "heading": "What kind of network attacks are there?",
@@ -32,7 +32,7 @@
             },
             {
                 "heading": "How can I protect myself against network attacks?",
-                "content": "The best way to protect yourself against network attacks is to make sure that you're using a secure network. Most password-protected networks will use encryption by default, so it is safe to connect to these. However, if you use an open WiFi network that doesn't require a password, it is highly likely that all your traffic is being sent across the network unencrypted. This means that anyone on the network can intercept your data and read it. To protect against this, you may want to try using a Virtual Private Network (VPN), which will encrypt your traffic for you and prevent an attacker from understanding what you're transmitting. It is also a good idea to not use open networks at all, if you can avoid it - as they are generally thought of as unsafe."
+                "content": "The best way to protect yourself against network attacks is to make sure that you're using a **secure network**. Most password-protected networks will use encryption by default, so it is safe to connect to these. However, if you use an open WiFi network that doesn't require a password, it is highly likely that all your traffic is being sent across the network **unencrypted**. This means that **anyone** on the network can intercept your data and read it. To protect against this, you may want to try using a **Virtual Private Network (VPN)**, which will encrypt your traffic for you and prevent an attacker from understanding what you're transmitting. It is also a good idea to not use open networks at all, if you can avoid it - as they are generally thought of as unsafe."
             }
         ]
     },
@@ -46,7 +46,7 @@
         },
         {
             "heading": "How do I protect myself against password attacks?",
-            "content": "The best way to protect yourself against password attacks is to make sure that your password is as complex as possible. Try checking your password in this app to see how strong it is, and use the password generator to create a stronger one. Additionally, enforcing a lockout policy on your devices can help against brute-force attacks by disabling password attempts after a certain number of failed attempts. A good thing to also ensure is that your passwords aren't easily guessable - try not to include names of family, friends or pets and try not to be able to link your passwords to you. If an attacker does manage to acquire your password, having two-factor authentication on your accounts will prevent them from being able to get in, even with your password!"
+            "content": "The best way to protect yourself against password attacks is to make sure that your password is **as complex as possible**. Try checking your password in this app to see how strong it is, and use the password generator to create a stronger one. Additionally, enforcing a lockout policy on your devices can help against brute-force attacks by disabling password attempts after a certain number of failed attempts. A good thing to also ensure is that your passwords **aren't easily guessable** - try not to include names of family, friends or pets and try not to be able to link your passwords to you. If an attacker does manage to acquire your password, having **two-factor authentication** on your accounts will prevent them from being able to get in, even with your password!"
         }]
     },
     {
@@ -58,11 +58,11 @@
         },
             {
                 "heading": "What are the different types of malware?",
-                "content": "There are five main types of malware that can be installed on your device. Firstly, there is a worm - which is designed to replicate itself and spread to as many devices as it can. Similarly, there is a virus, which is similar to a worm but relies on a host program to trigger its execution. Thirdly, there is a trojan, which is malware that is designed to look like legitimate, known software but actually contains malicious code. Next, there is ransomware, which will encrypt your files and demand a ransom for you to have them back. Spyware is designed to 'spy' on you and steal your data and information. Finally, adware is malware that will display unwanted adverts on your device."
+                "content": "There are five main types of malware that can be installed on your device. Firstly, there is a **worm** - which is designed to replicate itself and spread to as many devices as it can. Similarly, there is a **virus**, which is similar to a worm but relies on a host program to trigger its execution. Thirdly, there is a **trojan**, which is malware that is designed to look like legitimate, known software but actually contains malicious code. Next, there is ransomware, which will encrypt your files and demand a ransom for you to have them back. **Spyware** is designed to 'spy' on you and steal your data and information. Finally, **adware** is malware that will display unwanted adverts on your device."
             },
             {
                 "heading": "How can I protect myself against malware?",
-                "content": "The best way to protect yourself against malware is to use anti-malware software. This will scan your filesystem for any traces of malware and promptly remove them. Luckily, macOS has a feature called XProtect, which automatically scans your system in the background for known malware and will alert you if it finds a concern. Additionally, iOS and macOS feature a lockdown mode, for those who may be targeted by a cyber-attack. This disables features that therefore disable commonly-used attack vectors that could be exploited to plant malware on your phone."
+                "content": "The best way to protect yourself against malware is to **use anti-malware software**. This will scan your filesystem for any traces of malware and promptly remove them. Luckily, macOS has a feature called XProtect, which automatically scans your system in the background for known malware and will alert you if it finds a concern. Additionally, iOS and macOS feature a lockdown mode, for those who may be targeted by a cyber-attack. This disables features that therefore disable commonly-used attack vectors that could be exploited to plant malware on your phone."
             }
         ]
     }

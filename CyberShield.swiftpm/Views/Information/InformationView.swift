@@ -46,9 +46,10 @@ struct InformationView: View {
                                     ForEach(info.content, id: \.self) { item in
                                         Text(item.heading)
                                             .font(Font(UIFont(name: "WorkSans-Bold", size: 25.0)!))
-                                        Text("\(item.content)\n")
+//                                        Text("\(item.content)\n")
+                                        Text(try! AttributedString(markdown: item.content))
                                             .font(Font(UIFont(name: "WorkSans-Regular", size: 17.0)!))
-                                            .multilineTextAlignment(.leading)
+                                            .padding(.bottom)
                                     }
                                 }
                                 .foregroundColor(.white)
