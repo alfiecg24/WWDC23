@@ -8,13 +8,13 @@ import PackageDescription
 import AppleProductTypes
 
 let package = Package(
-    name: "CyberShield",
+    name: "SecureMe",
     platforms: [
         .iOS("16.0")
     ],
     products: [
         .iOSApplication(
-            name: "CyberShield",
+            name: "SecureMe",
             targets: ["AppModule"],
             displayVersion: "1.0",
             bundleVersion: "1",

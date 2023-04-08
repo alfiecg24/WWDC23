@@ -3,7 +3,6 @@ import SwiftUI
 
 struct TitleScreenView: View {
     let colours: [Color] = [.red, .orange, .yellow, .green, .blue, .purple]
-    let text = "Welcome to CyberShield"
     
     @State private var animate = false
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
@@ -14,9 +13,12 @@ struct TitleScreenView: View {
             ZStack {
                 GradientBackground()
                 VStack {
-                    Text(text)
+                    Text("Welcome to SecureMe")
                         .foregroundColor(.white)
                         .font(Font(UIFont(name: "WorkSans-Bold", size: 60.0)!))
+                    Text("Learn about how to be more cyber-secure")
+                        .foregroundColor(.white)
+                        .font(Font(UIFont(name: "WorkSans-Regular", size: 25.0)!))
                         .padding(.bottom)
                     ContinueButton()
                         .padding()
