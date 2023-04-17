@@ -1,9 +1,9 @@
-# CyberShield
+# SecureMe
 ## My submission for the 2023 Swift Student Challenge
 
 ## Results will be announced on May 9th, 2023
 
-CyberShield is a simple app that is designed to teach people about the importance of being cyber-secure. Built in pure SwiftUI, it features a "how secure is my password" calculator, a secure password generator, and some information and statistics about cyber-safety.
+SecureMe is a simple app that is designed to teach people about the importance of being cyber-secure. Built in pure SwiftUI, it features a "how secure is my password" calculator, a secure password generator, and some information and statistics about cyber-safety.
 
 Having been a winner of last year's Swift Student Challenge despite submitting a rather simple app, I decided to prioritise a more fluid and intuitive UI this year. I also decided to add a password generator, which can demonstrate how Swift can handle complex mathematics and algorithms. 
 
