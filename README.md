@@ -1,7 +1,7 @@
 # SecureMe
 ## My submission for the 2023 Swift Student Challenge
 
-## Results will be announced on May 9th, 2023
+## Selected as a winner! 🎉🎉
 
 SecureMe is a simple app that is designed to teach people about the importance of being cyber-secure. Built in pure SwiftUI, it features a "how secure is my password" calculator, a secure password generator, and some information and statistics about cyber-safety.
 
